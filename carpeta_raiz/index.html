@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Salida laboral en diseño gráfico</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="imagenes/favicon.ico" rel="icon">
+<style>
+</style>
+</head>
+<body>	
+	
+<div id="infografia"><img src="imagenes/infografia.jpg">
+
+	<!-- Imagen a pantalla completa 1 -->
+    <div class="fullscreen-image" id="fullscreenImage1">
+        <button class="close-button" onclick="hideImage('fullscreenImage1')"onmousedown="sonido.play()">X</button>
+        <img src="imagenes/guias.png" alt="Imagen 1">
+    </div>
+
+    <!-- Imagen a pantalla completa 2 -->
+    <div class="fullscreen-image" id="fullscreenImage2">
+        <button class="close-button" onclick="hideImage('fullscreenImage2')"onmousedown="sonido.play()">X</button>
+        <img src="imagenes/panel_central.png" alt="Imagen 2">
+    </div>
+
+	
+
+	
+	<a href="contenido1.html">	
+		<div id="area1"onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+	</a>
+	
+	<a href="contenido2.html">
+		<div id="area2"onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+	</a>	
+	
+	<a href="https://jordisanchez.info/tener-experiencia/"target="_blank">
+		<div id="area3"onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+	</a>
+	
+	<a href="contenido3.html">
+		<div id="area4"onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+	</a>
+	
+	<a href="https://www.youtube.com/watch?v=oKFiaHqV338" target="_blank">
+		<div id="area5"onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+	</a>
+
+	
+	<div id="area6"onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"onclick="showImage('fullscreenImage1')"onmousedown="sonido.play()"></div>
+	
+	<a href="https://codewebbarcelona.com/blog/conseguir-trabajo-disenador-grafico/#:~:text=Las%208%20claves%20para%20conseguir%20trabajo%20como%20dise%C3%B1ador,...%208%20Pres%C3%A9ntate%20a%20concursos%20...%20M%C3%A1s%20elementos" target="_blank">
+		<div id="area7"onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+	</a>
+	
+	<div id="area8"onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"onclick="showImage('fullscreenImage2')"onmousedown="sonido.play()"></div>
+
+	<a href="https://www.youtube.com/watch?v=f_MYvFjiYGk" target="_blank">
+		<div id="area9"onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+	</a>
+
+	<a href="https://linktr.ee/gonzalezagustin" target="_blank">
+		<div id="area10"onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+	</a>
+
+</div>
+
+
+
+<script>
+		function mouseOver(area) {
+		  if (area=="area1") {
+		  	document.getElementById("area1").style.opacity = 0.5;
+		  }
+		  if (area=="area2") {
+		  	document.getElementById("area2").style.opacity = 0.5;
+		  }
+		  if (area=="area3") {
+		  	document.getElementById("area3").style.opacity = 0.5;
+		  }
+		  if (area=="area4") {
+		  	document.getElementById("area4").style.opacity = 0.5;
+		  }
+		  if (area=="area5") {
+		  	document.getElementById("area5").style.opacity = 0.5;
+		  }
+		  if (area=="area6") {
+		  	document.getElementById("area6").style.opacity = 0.5;
+		  }
+		  if (area=="area7") {
+		  	document.getElementById("area7").style.opacity = 0.5;
+		  }
+		  if (area=="area8") {
+		  	document.getElementById("area8").style.opacity = 0.5;
+		  }
+		  if (area=="area9") {
+		  	document.getElementById("area9").style.opacity = 0.5;
+		  }
+		  if (area=="area10") {
+		  	document.getElementById("area10").style.opacity = 0.5;
+		  }
+		}
+		function mouseOut(area) {
+		  if (area=="area1") {
+		  	document.getElementById("area1").style.opacity = 0;
+		  }
+		  if (area=="area2") {
+		  	document.getElementById("area2").style.opacity = 0;
+		  }
+		  if (area=="area3") {
+		  	document.getElementById("area3").style.opacity = 0;
+		  }
+		  if (area=="area4") {
+		  	document.getElementById("area4").style.opacity = 0;
+		  }
+		  if (area=="area5") {
+		  	document.getElementById("area5").style.opacity = 0;
+		  }
+		  if (area=="area6") {
+		  	document.getElementById("area6").style.opacity = 0;
+		  }
+		  if (area=="area7") {
+		  	document.getElementById("area7").style.opacity = 0;
+		  }
+		  if (area=="area8") {
+		  	document.getElementById("area8").style.opacity = 0;
+		  }
+		  if (area=="area9") {
+		  	document.getElementById("area9").style.opacity = 0;
+		  }
+		  if (area=="area10") {
+		  	document.getElementById("area10").style.opacity = 0;
+		  }
+		  
+		}	
+		
+		function showImage(id) {
+            document.getElementById(id).style.display = 'flex';
+        }
+
+        function hideImage(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+
+
+		var sonido = new Audio();
+		sonido.src = "audios/whoosh-transitions.mp3";
+		
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
